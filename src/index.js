@@ -59,7 +59,7 @@ import { createRoot } from 'react-dom/client';
 const AppList = () => {
 
 
-    const items = ['Мой первый элемент', 'Мой второй элемент'];
+    const items = ['My first element', 'Мой второй элемент'];
     const firstItem = <li>Самый первый элемент</li>
     const isAuth = true;
     return (
