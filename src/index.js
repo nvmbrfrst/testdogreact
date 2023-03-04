@@ -57,13 +57,28 @@ import { createRoot } from 'react-dom/client';
 
 
 const AppList = () => {
-  return (
-    <ul>
-      <li>AppList</li>
-      <li>AppList</li>
-    </ul>
-  )
-}
+
+
+    const items = ['Мой первый элемент', 'Мой второй элемент'];
+    const firstItem = <li>Самый первый элемент</li>
+    const isAuth = true;
+    return (
+       <ul>
+          {
+             isAuth ? firstItem :null
+          }
+          {
+             items.map(item => <li>{item}</li>)
+          }
+          <li>{items[0]}</li>
+          <li>{items[1]}</li>
+       </ul>
+    )
+ 
+
+  }
+
+
 
 const Appheader = () => {
   return <h1><span>AppHeader</span></h1>
