@@ -1,6 +1,6 @@
 import './styles.css';
 
-export function Search() {
+export function Sort() {
   return (
     <>
     
@@ -8,4 +8,3 @@ export function Search() {
   );
 }
 
- 
