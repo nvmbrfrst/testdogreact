@@ -32,6 +32,7 @@ export function Card({
 
 
       {/* карточка */}
+      {/* eslint-disable-next-line */}
       <a href="#" className="card__link">
 
         {/* карточка - картинка */}
@@ -62,6 +63,7 @@ export function Card({
       </a>
 
       {/* кнопка - корзина */}
+      {/* eslint-disable-next-line */}
       <a href="#" className="card__cart btn btn_type_primary">
         В корзину
       </a>
