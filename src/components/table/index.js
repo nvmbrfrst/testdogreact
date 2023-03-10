@@ -15,7 +15,7 @@ const dataPokemon = pokemonData.map(pokemon => ({
     image: pokemon.image
 }))
 
-export const Table = ({ rows = 20 }) => {
+export const Table = ({ rows = 3 }) => {
 
     const columns = [
         {
@@ -72,6 +72,6 @@ export const Table = ({ rows = 20 }) => {
     return <AntTable dataSource={dataPokemon} columns={columns} pagination={{
         pageSize: rows,
         // defaultPageSize: 100
-        showSizeChanger: false,
+        showSizeChanger: true,
     }} />
 }
