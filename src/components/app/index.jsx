@@ -6,7 +6,8 @@ import { Sort } from "../sort";
 import { Logo } from "../logo";
 import { Search } from "../search";
 import { dataCard } from "../../data";
-import "./styles.css";
+import s from "./styles.module.css";
+import { Button } from "../button";
 
 export function App() {
   // состояние карточек
@@ -39,9 +40,16 @@ export function App() {
   useEffect(() => {
     handleRequest();
     // отслеживание постоянного ввода
-      // eslint-disable-next-line
+    // eslint-disable-next-line
   }, [searchQuery]);
 
+
+  // in-line styles
+  const margin = 40;
+  const headerStyle = {
+    color: "red",
+    margin: `${margin}px`,
+  }
 
   return (
     <>
@@ -53,6 +61,9 @@ export function App() {
         />
       </Header>
       <main className="content container">
+      <h1 style={headerStyle}>Стилизованный заголовок</h1>
+        <Button htmlType='button' type="primary" extraClass={s.button}>Купить</Button>
+        <Button htmlType='button' type="secondary">Отложить</Button>
         <Sort />
         <CardList goods={cards} />
       </main>
