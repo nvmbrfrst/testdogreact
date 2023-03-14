@@ -2,10 +2,11 @@
 import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { App } from './components/app';
+import { AppMui } from './components/app-mui';
 import './styles.css';
-import { AntApp } from './components/app-ant/index';
+// import { AntApp } from './components/app-ant/index';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
-root.render(<StrictMode><AntApp /></StrictMode>);
+root.render(<StrictMode><AppMui /></StrictMode>);
